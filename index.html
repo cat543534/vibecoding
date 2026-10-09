@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VibeCoding — Навигация</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #0d1117;
+    color: #c9d1d9;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+  }
+  h1 {
+    font-size: 42px;
+    font-weight: 800;
+    margin-bottom: 8px;
+    background: linear-gradient(135deg, #58a6ff, #bc8cff, #f778ba);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .subtitle {
+    color: #8b949e;
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+    max-width: 700px;
+    width: 100%;
+  }
+  .card {
+    background: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 12px;
+    padding: 28px 24px;
+    text-decoration: none;
+    color: #c9d1d9;
+    transition: all 0.25s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 12px;
+  }
+  .card:hover {
+    border-color: #58a6ff;
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(88, 166, 255, 0.15);
+  }
+  .card-icon {
+    font-size: 36px;
+    line-height: 1;
+  }
+  .card-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #f0f6fc;
+  }
+  .card-desc {
+    font-size: 13px;
+    color: #8b949e;
+    line-height: 1.4;
+  }
+  .card-arrow {
+    margin-top: 4px;
+    color: #58a6ff;
+    font-size: 20px;
+    opacity: 0;
+    transform: translateX(-6px);
+    transition: all 0.25s ease;
+  }
+  .card:hover .card-arrow {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  footer {
+    margin-top: 48px;
+    color: #484f58;
+    font-size: 13px;
+  }
+  footer a {
+    color: #58a6ff;
+    text-decoration: none;
+  }
+  footer a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+
+  <h1>⚡ VibeCoding</h1>
+  <p class="subtitle">Выберите проект для запуска</p>
+
+  <div class="grid">
+
+    <a href="agent.html" class="card">
+      <div class="card-icon">🤖</div>
+      <div class="card-title">Agent</div>
+      <div class="card-desc">AI-агент с автономным поведением</div>
+      <div class="card-arrow">→</div>
+    </a>
+
+    <a href="gigachat.html" class="card">
+      <div class="card-icon">🧠</div>
+      <div class="card-title">GigaChat</div>
+      <div class="card-desc">Интерфейс для GigaChat</div>
+      <div class="card-arrow">→</div>
+    </a>
+
+    <a href="qwen.html" class="card">
+      <div class="card-icon">💬</div>
+      <div class="card-title">Qwen</div>
+      <div class="card-desc">Чат с моделью Qwen</div>
+      <div class="card-arrow">→</div>
+    </a>
+
+    <a href="qwen_web.html" class="card">
+      <div class="card-icon">🌐</div>
+      <div class="card-title">Qwen Web</div>
+      <div class="card-desc">Веб-версия Qwen</div>
+      <div class="card-arrow">→</div>
+    </a>
+
+  </div>
+
+  <footer>
+    Репозиторий: <a href="https://github.com/cat543534/vibecoding" target="_blank">cat543534/vibecoding</a>
+  </footer>
+
+</body>
+</html>
